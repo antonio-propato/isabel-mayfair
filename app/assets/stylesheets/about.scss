@@ -1,0 +1,76 @@
+.main-img {
+  height: 840px;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+body {
+  background-color: #000000;
+}
+
+h1 {
+  color: white;
+  font-style: italic;
+  position: relative;
+  top: 270px;
+  font-size: 70px;
+}
+
+
+.home a {
+  color: white;
+  font-style: italic;
+  position: relative;
+  top: 280px;
+  font-size: 20px;
+  text-align: center;
+  font-size: smaller;
+}
+
+.res-btn {
+  margin-right: 60px;
+  margin-left: 80px;
+  margin-top: 60px;
+  border-radius: 5%;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.res-btn a {
+  color: white;
+  font-style: italic;
+  background-color: rgb(114, 22, 22);
+  padding: 20px 20px;
+
+  &:hover {
+    background-color: rgb(118, 57, 57);
+    color: white;
+    transition: 0.5s;
+  }
+}
+
+.events-btn {
+  margin-right: 80px;
+  margin-left: 60px;
+  margin-top: 60px;
+  border-radius: 5%;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.events-btn a {
+  color: white;
+  font-style: italic;
+  background-color: rgb(114, 22, 22);
+  padding: 20px 35px;
+
+  &:hover {
+    background-color: rgb(118, 57, 57);
+    color: white;
+    transition: 0.5s;
+  }
+}

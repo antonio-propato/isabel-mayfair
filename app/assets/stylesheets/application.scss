@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+@import "about";
+@import "navbar";
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+
+* {
+  text-decoration: none !important;
+  top: 0%;
+}
+
+body{
+  font-family: "Explora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
