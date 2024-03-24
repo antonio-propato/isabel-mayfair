@@ -1,50 +1,66 @@
-.main-img {
-  height: 840px;
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  opacity: 0.7;
-}
-
 body {
   background-color: #000000;
 }
 
-h1 {
-  color: white;
-  font-style: italic;
+.banner {
+  object-fit: fill;
+  height: 800px;
   position: relative;
-  top: 270px;
-  font-size: 70px;
+  margin-bottom: 40px;
 }
 
+.main-img {
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  position: relative;
+}
 
-.home a {
+.banner h1 {
   color: white;
   font-style: italic;
-  position: relative;
-  top: 280px;
-  font-size: 20px;
+  position: absolute;
+  top: 211px;
+  font-size: 60px;
   text-align: center;
-  font-size: smaller;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: auto;
 }
 
-.res-btn {
-  margin-right: 60px;
-  margin-left: 80px;
-  margin-top: 60px;
-  border-radius: 5%;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.5s;
-}
 
-.res-btn a {
+.main .res {
+  height: 60px;
+  width: 140px;
   color: white;
   font-style: italic;
+  text-align: center;
   background-color: rgb(114, 22, 22);
-  padding: 20px 20px;
+  position: absolute;
+  top: 400px;
+  right: 55%;
 
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(118, 57, 57);
+    color: white;
+    transition: 0.5s;
+  }
+
+}
+.main .events{
+  height: 60px;
+  width: 140px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  background-color: rgb(114, 22, 22);
+  position: absolute;
+  top: 400px;
+  left: 55%;
+
+  cursor: pointer;
   &:hover {
     background-color: rgb(118, 57, 57);
     color: white;
@@ -52,24 +68,81 @@ h1 {
   }
 }
 
-.events-btn {
-  margin-right: 80px;
-  margin-left: 60px;
-  margin-top: 60px;
-  border-radius: 5%;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.5s;
+.img-menu {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  box-shadow: 0px 0px 13px 3px rgb(114, 22, 22);
 }
 
-.events-btn a {
+.description {
+  color: white;
+  text-align: start;
+  width: 100%;
+  font-size: 17px;
+}
+
+.description a {
+  height: 60px;
+  width: 140px;
   color: white;
   font-style: italic;
+  text-align: center;
   background-color: rgb(114, 22, 22);
-  padding: 20px 35px;
-
-  &:hover {
+  margin-top: 5%;
+   &:hover {
     background-color: rgb(118, 57, 57);
+    color: white;
+    transition: 0.5s;
+  }
+}
+
+.description p {
+  text-align: justify;
+}
+
+.description h1 {
+  text-align: center;
+}
+
+.sundays {
+  width: 100%;
+  height: auto;
+  background-color: rgb(114, 22, 22);
+  margin-top: 40px;
+  color: white;
+  font-size: 17px;
+
+}
+
+.champ-img {
+  width: 100%;
+  height: 720px;
+  object-fit: scale-down;
+}
+
+.brunch-description p {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+
+.brunch-description h1 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.brunch-description .res {
+  height: 60px;
+  width: 140px;
+  color: rgb(114, 22, 22);
+  font-style: italic;
+  text-align: center;
+  background-color: white;
+
+   &:hover {
+    background-color: rgb(147, 124, 124);
     color: white;
     transition: 0.5s;
   }

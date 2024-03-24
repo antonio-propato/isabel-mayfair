@@ -1,20 +1,65 @@
+<div class="d-flex flex-column">
 
-
-<%= image_tag("Isabel.jpeg", class: "main-img") %>
-
-<div class="container">
-  <div class="row">
-    <div class="col sm-6">
-      <div class="mb-3">
-
-  <h1 align="center">Isabel Mayfair</h1>
-
-  <div class="home d-flex justify-content-center">
-    <p class="res-btn"><%= link_to 'Reservations', "https://www.sevenrooms.com/reservations/isabelmayfair" %></p>
-    <p class="events-btn"><%= mail_to 'tonyprp@gmail.com', "Events", subject: "Events" %></p>
+  <div class="banner">
+    <%= image_tag("Isabel.jpeg", class: "main-img") %>
+    <h1>Isabel Mayfair</h1>
   </div>
 
+  <div class="main d-flex justify-content-center">
+    <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
+    <%= mail_to "tonyprp@gmail.com", "Events", class: "events p-3 rounded" %>
+  </div>
+
+
+  <div class="container d-flex justify-content-between">
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+          <%= image_tag("Img.jpeg", class:"img-menu") %>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="description d-flex flex-column p-3">
+          <h1 class="mb-4 mt-3"><em>Elevate your lunch</em></h1>
+          <p>We're delighted to unveil our brand-new lunch menu, meticulously crafted by our team of skilled chefs with the discerning midday diner in mind. Whether you're sealing deals, taking a break from your Bond Street shopping spree, or simply enjoying a solo lunchtime indulgence, we're here to make it a memorable experience tailored just for you.</p>
+          <p>Discover a lunchtime like no other, featuring an exclusive menu of individually plated masterpieces, all offered at fixed prices – ideal for those on a tight schedule. Indulge in our succulent chicken roulade, artfully paired with a spinach, blue cheese, and potato galette. For those seeking a lighter option, savour our classic Isabel Mayfair Caesar salad, adorned with crispy croutons and Parmesan. Or why not delight in our exquisite beef ravioli, lovingly served with a tantalizing brisket sauce and crispy Jerusalem artichoke?</p>
+          <p>At Isabel Mayfair, we're committed to using only the freshest ingredients to capture the essence and flavours of Mediterranean cuisine in every dish we create, from vibrant salads to comforting pastas. Your lunchtime deserves to be elevated, and we're here to make that happen!</p>
+          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
         </div>
       </div>
     </div>
+
+  </div>
+
+
+<div class="sundays">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-lg-6">
+        <div class="brunch-description d-flex flex-column p-3">
+          <h1><em>Sundays at Isabel Mayfair</em></h1>
+          <p><strong>Want to finish your weekend in true style? </strong></p>
+          <br>
+          <p>Join us on Sundays at Isabel Mayfair for an iconic brunch. In addition to our regular Sunday menu, we’re thrilled to introduce our fabulous Champagne Brunch, featuring three exquisite courses and a half-bottle of the divine Charles Heidsieck Brut Réserve Champagne per person.</p>
+          <p>Sundays at Isabel Mayfair are accompanied by our guest DJs, setting the scene with a vibrant soundtrack to finish your weekend with finesse. Join us for an iconic Sunday brunch experience that’s more than just a meal – it’s a celebration of flavours, music and style.</p>
+          <br>
+          <br>
+          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded align-self-end" %>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+          <%= image_tag("champagne.jpeg", class:"champ-img") %>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
 </div>

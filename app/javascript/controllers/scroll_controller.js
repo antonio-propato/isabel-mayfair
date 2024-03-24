@@ -7,12 +7,12 @@ export default class extends Controller {
     window.addEventListener('scroll', this.scrollHandler);
   }
 
-  disconnect() {
-    window.removeEventListener('scroll', this.scrollHandler);
-  }
+//   disconnect() {
+//     window.removeEventListener('scroll', this.scrollHandler);
+//   }
 
-  scroll() {
-    console.log('scrolling');
-    this.element.classList.add('black-background');
-  }
-}
+//   scroll() {
+//     console.log('scrolling');
+//     this.element.classList.add('black-background');
+//   }
+// }
