@@ -29,6 +29,12 @@ body {
   margin-bottom: auto;
 }
 
+.banner .navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
 .main .res {
   height: 60px;
