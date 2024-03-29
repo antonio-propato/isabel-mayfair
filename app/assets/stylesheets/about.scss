@@ -118,8 +118,8 @@ body {
 
 .champ-img {
   width: 100%;
-  height: 720px;
-  object-fit: scale-down;
+  height: 680px;
+  object-fit: cover;
 }
 
 .brunch-description p {
@@ -146,4 +146,30 @@ body {
     color: white;
     transition: 0.5s;
   }
+}
+
+.carousel {
+  height: 545px;
+  color: white;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel p {
+  font-size: 16;
+}
+
+.carousel-description {
+  font-size: 16;
+}
+
+.carousel h2 {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+
+#carouselExampleFade {
+  height: auto;
 }
