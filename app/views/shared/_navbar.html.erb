@@ -1,6 +1,17 @@
-  <div class="navbar d-flex justify-content-center" data-controller="scroll" data-action="scroll->scroll#scroll">
-    <%= link_to "Home" %>
-    <%= link_to "Menu" %>
-    <%= link_to "Events" %>
-    <%= link_to "The Dragon Room" %>
+  <div class="navbar d-flex align-items-evenly px-4" data-controller="scroll" data-action="scroll->scroll#scroll">
+
+
+        <div class="mb-3">
+          <%= image_tag("logo.jpeg", width: "35px") %>
+        </div>
+
+
+        <div class="mb-5">
+          <%# <%= link_to "Home" %>
+          <%= link_to "Menu" %>
+          <%= link_to "Events" %>
+          <%= link_to "The Dragon Room" %>
+        </div>
+
+
   </div>

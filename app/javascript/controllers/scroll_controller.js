@@ -21,7 +21,7 @@ export default class extends Controller {
     } else {
       this.element.classList.remove('black-background');
     }
-    this.element.style.transition = 'background-color 0.4s ease-out';
+    this.element.style.transition = 'background-color 1s ease-out';
   }
 
 }

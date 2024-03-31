@@ -1,122 +1,189 @@
 <div class="d-flex flex-column">
 
   <div class="banner">
-    <%= image_tag("Isabel.jpeg", class: "main-img") %>
-    <h1>Isabel Mayfair</h1>
     <%= render 'shared/navbar' %>
+      <div class="video-container mb-3">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fisabelmayfairrestaurant%2Fvideos%2F769131824475414%2F&show_text=false&width=560&t=0"
+                style="border:none;overflow:hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="false"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"
+                autoplay
+                muted>
+        </iframe>
+      </div>
+
+        <%# <h1>Isabel Mayfair</h1> %>
+<%#
+        <div class="cta d-flex justify-content-center">
+          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
+          <%# <%= mail_to "events@isabelw1.london", "Events", class: "events p-3 rounded" %>
+        </div>
   </div>
 
-  <div class="main d-flex justify-content-center">
-    <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
-    <%= mail_to "tonyprp@gmail.com", "Events", class: "events p-3 rounded" %>
-  </div>
 
 
   <div class="container d-flex justify-content-between">
 
-    <div class="row">
-      <div class="col-12 col-lg-6">
-          <%= image_tag("Img.jpeg", class:"img-menu") %>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+            <%= image_tag("Img.jpeg", class:"img-menu") %>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="lunch-description d-flex flex-column p-3">
+            <h1 class="mb-4"><em>Elevate your lunch</em></h1>
+            <p>We're delighted to unveil our brand-new lunch menu, meticulously crafted by our team of skilled chefs with the discerning midday diner in mind. Whether you're sealing deals, taking a break from your Bond Street shopping spree, or simply enjoying a solo lunchtime indulgence, we're here to make it a memorable experience tailored just for you.</p>
+            <p>Discover a lunchtime like no other, featuring an exclusive menu of individually plated masterpieces, all offered at fixed prices – ideal for those on a tight schedule. Indulge in our succulent chicken roulade, artfully paired with a spinach, blue cheese, and potato galette. For those seeking a lighter option, savour our classic Isabel Mayfair Caesar salad, adorned with crispy croutons and Parmesan. Or why not delight in our exquisite beef ravioli, lovingly served with a tantalizing brisket sauce and crispy Jerusalem artichoke?</p>
+            <p>At Isabel Mayfair, we're committed to using only the freshest ingredients to capture the essence and flavours of Mediterranean cuisine in every dish we create, from vibrant salads to comforting pastas. Your lunchtime deserves to be elevated, and we're here to make that happen!</p>
+            <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
+          </div>
+        </div>
       </div>
 
-      <div class="col-12 col-lg-6">
-        <div class="description d-flex flex-column p-3">
-          <h1 class="mb-4 mt-3"><em>Elevate your lunch</em></h1>
-          <p>We're delighted to unveil our brand-new lunch menu, meticulously crafted by our team of skilled chefs with the discerning midday diner in mind. Whether you're sealing deals, taking a break from your Bond Street shopping spree, or simply enjoying a solo lunchtime indulgence, we're here to make it a memorable experience tailored just for you.</p>
-          <p>Discover a lunchtime like no other, featuring an exclusive menu of individually plated masterpieces, all offered at fixed prices – ideal for those on a tight schedule. Indulge in our succulent chicken roulade, artfully paired with a spinach, blue cheese, and potato galette. For those seeking a lighter option, savour our classic Isabel Mayfair Caesar salad, adorned with crispy croutons and Parmesan. Or why not delight in our exquisite beef ravioli, lovingly served with a tantalizing brisket sauce and crispy Jerusalem artichoke?</p>
-          <p>At Isabel Mayfair, we're committed to using only the freshest ingredients to capture the essence and flavours of Mediterranean cuisine in every dish we create, from vibrant salads to comforting pastas. Your lunchtime deserves to be elevated, and we're here to make that happen!</p>
-          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
+  </div>
+
+
+  <div class="red-background" id="sundays">
+    <div class="container">
+      <div class="row my-3">
+
+        <div class="col-12 col-lg-6">
+          <div class="brunch-description d-flex flex-column p-3">
+            <h1><em>Sundays at Isabel Mayfair</em></h1>
+            <p><strong>Want to finish your weekend in true style? </strong></p>
+            <br>
+            <p>Join us on Sundays at Isabel Mayfair for an iconic brunch. In addition to our regular Sunday menu, we’re thrilled to introduce our fabulous Champagne Brunch, featuring three exquisite courses and a half-bottle of the divine Charles Heidsieck Brut Réserve Champagne per person.</p>
+            <p>Sundays at Isabel Mayfair are accompanied by our guest DJs, setting the scene with a vibrant soundtrack to finish your weekend with finesse. Join us for an iconic Sunday brunch experience that’s more than just a meal – it’s a celebration of flavours, music and style.</p>
+            <br>
+            <br>
+            <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded align-self-end" %>
+          </div>
         </div>
+
+        <div class="col-12 col-lg-6">
+            <%= image_tag("champagne.jpeg", class:"champ-img") %>
+        </div>
+
       </div>
     </div>
 
   </div>
 
 
-<div class="sundays">
-  <div class="container">
-    <div class="row my-3">
+  <div class="carousel mt-4">
+    <div class="container">
+      <div class="row mb-3">
 
-      <div class="col-12 col-lg-6">
-        <div class="brunch-description d-flex flex-column p-3">
-          <h1><em>Sundays at Isabel Mayfair</em></h1>
-          <p><strong>Want to finish your weekend in true style? </strong></p>
-          <br>
-          <p>Join us on Sundays at Isabel Mayfair for an iconic brunch. In addition to our regular Sunday menu, we’re thrilled to introduce our fabulous Champagne Brunch, featuring three exquisite courses and a half-bottle of the divine Charles Heidsieck Brut Réserve Champagne per person.</p>
-          <p>Sundays at Isabel Mayfair are accompanied by our guest DJs, setting the scene with a vibrant soundtrack to finish your weekend with finesse. Join us for an iconic Sunday brunch experience that’s more than just a meal – it’s a celebration of flavours, music and style.</p>
-          <br>
-          <br>
-          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded align-self-end" %>
+        <div class="col-12">
+            <h2 align="center">About Isabel Mayfair</h2>
+            <p class="p-3">Nestled into an elegant pocket of central London, Isabel is a destination with a unique character that belies the more genteel nature of the area. Isabel’s signature style from lunch through until late night cocktails is complemented by an imaginative food and drink menu that derives from the essence and traditions of many Latin and Mediterranean cuisines.</p>
         </div>
-      </div>
 
-      <div class="col-12 col-lg-6">
-          <%= image_tag("champagne.jpeg", class:"champ-img") %>
-      </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <%= image_tag("Isabel.jpeg", class:"d-block w-100 img", alt: "...")  %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("Carousel-2.png", class:"d-block w-100 img", alt: "...")  %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("Carousel-3.png", class:"d-block w-100 img", alt: "...")  %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("Carousel-4.png", class:"d-block w-100 img", alt: "...")  %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("Carousel-5.png", class:"d-block w-100 img", alt: "...")  %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag("Carousel-6.png", class:"d-block w-100 img", alt: "...")  %>
+                </div>
+              </div>
 
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+        <div class="col-12">
+          <div class="carousel-description d-flex flex-column p-3">
+            <p class="mt-4">Since opening in 2017, at number 26 Albemarle Street, Isabel remains one of the most distinctive restaurants and bars in the capital. Its building dates back to 1905 and the facade is one of the finest examples of Beaux-Arts inspired architecture, popular at the time. One of the earliest occupants of the building was Charles Mellier, a furniture dealer and manufacturer selling period English and French furniture. It could be said that style and good taste is literally in Isabel’s foundations.</p>
+            <p>From every plate of food served and every drink poured, Isabel presents a vibrancy and style of its own. Look a little deeper and you will notice the subtle nuances that intersect the time-honoured grandeur of Mayfair with the fun, sensuality and glamour of Latin America and the Mediterranean.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
+
+
+  <div class="restaurant-details">
+
+    <div class="container d-flex">
+      <div class="row">
+
+        <div class="col-12 col-lg-6">
+          <div class="container d-flex flex-column p-4">
+              <%# Opening times %>
+              <div class="row">
+                <div class="col mb-2">
+                  <h3>Opening times</h3>
+                  <p>Monday to Saturday: 12noon – 2.30am</p>
+                  <p>Sunday: 12noon – midnight</p>
+                  <p><em>Lunch is served between 12noon and 3.45pm every day. </em></p>
+                  <p><em>Dinner service begins at 5pm every day. The last sittings for dinner are 10.45pm (Mon - Wed), 11.15pm (Thu - Sat) and 10.15pm (Sun).</em></p>
+                  <p><em>The kitchen will be closed outside of these hours, though the bar remains open.</em></p>
+                </div>
+              </div>
+
+              <%# Dress code %>
+              <div class="row">
+                  <div class="col">
+                    <div class="dress-code mt-2">
+                      <h3>Dress Code</h3>
+                      <p>Our dress code is "Smart Elegant" and we encourage individual style, but we will not admit guests who are too casual, wearing sports clothing, shorts, ripped jeans, jogging attire, hoodies, baseball caps or casual trainers. The venue and management reserve the right of admission.</p>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+
+                <%# Contact %>
+                <div class="row">
+                  <div class="col">
+                    <h3>Contact</h3>
+                      <p><strong>Phone</strong></p>
+                      <%= link_to "+44 (0)20 3096 9292", "tel:+442030969292", class: "test text-light" %>
+                      <p class="mt-2"><strong>Email</strong></p>
+                      <%= mail_to "reservations@isabelw1.london", class: "test text-light" %>
+                      <p class="mt-2"><strong>Address</strong></p>
+                      <p>26 Albemarle Street, Mayfair, London W1S 4HY</p>
+                  </div>
+                </div>
+
+              </div>
+         </div>
+
+        <div class="col-12 col-lg-6">
+          <%# Map %>
+          <div class="map-container pt-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.345579678736!2d-0.1436380842290322!3d51.50986557963459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605b7f5e5f8d7%3A0x8c8f7a0e3e3e3e3e!2s26%20Albemarle%20St%2C%20Mayfair%2C%20London%20W1S%204HY%2C%20UK!5e0!3m2!1sen!2sus!4v1635423456789!5m2!1sen!2sus" allowfullscreen="" loading="lazy" style="width: 100%; height: 600px;"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 </div>
 
-
-<div class="carousel mt-4">
-  <div class="container">
-    <div class="row mb-3">
-
-      <div class="col-12">
-          <h2 align="center">About Isabel Mayfair</h2>
-          <p class="p-3">Nestled into an elegant pocket of central London, Isabel is a destination with a unique character that belies the more genteel nature of the area. Isabel’s signature style from lunch through until late night cocktails is complemented by an imaginative food and drink menu that derives from the essence and traditions of many Latin and Mediterranean cuisines.</p>
-      </div>
-
-
-
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <%= image_tag("Isabel.jpeg", class:"d-block w-100 img", alt: "...")  %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("Carousel-2.png", class:"d-block w-100 img", alt: "...")  %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("Carousel-3.png", class:"d-block w-100 img", alt: "...")  %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("Carousel-4.png", class:"d-block w-100 img", alt: "...")  %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("Carousel-5.png", class:"d-block w-100 img", alt: "...")  %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("Carousel-6.png", class:"d-block w-100 img", alt: "...")  %>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          </div>
-
-
-
-      <div class="col-12">
-        <div class="carousel-description d-flex flex-column p-3">
-          <p class="mt-4">Since opening in 2017, at number 26 Albemarle Street, Isabel remains one of the most distinctive restaurants and bars in the capital. Its building dates back to 1905 and the facade is one of the finest examples of Beaux-Arts inspired architecture, popular at the time. One of the earliest occupants of the building was Charles Mellier, a furniture dealer and manufacturer selling period English and French furniture. It could be said that style and good taste is literally in Isabel’s foundations.</p>
-          <p>From every plate of food served and every drink poured, Isabel presents a vibrancy and style of its own. Look a little deeper and you will notice the subtle nuances that intersect the time-honoured grandeur of Mayfair with the fun, sensuality and glamour of Latin America and the Mediterranean.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </div>
-
-
-
-
+</div>
 </div>

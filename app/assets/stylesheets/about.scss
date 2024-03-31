@@ -3,18 +3,23 @@ body {
 }
 
 .banner {
-  object-fit: fill;
-  height: 800px;
-  position: relative;
-  margin-bottom: 40px;
+  height: auto;
+  // position: relative;
+  // margin-bottom: 40px;
 }
 
-.main-img {
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.7;
+.video-container {
   position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .banner h1 {
@@ -36,15 +41,15 @@ body {
   z-index: 1;
 }
 
-.main .res {
-  height: 60px;
+.cta .res {
+  height: auto;
   width: 140px;
   color: white;
   font-style: italic;
   text-align: center;
   background-color: rgb(114, 22, 22);
   position: absolute;
-  top: 400px;
+  top: 600px;
   right: 55%;
 
   cursor: pointer;
@@ -55,15 +60,15 @@ body {
   }
 
 }
-.main .events{
-  height: 60px;
+.cta .events{
+  height: auto;
   width: 140px;
   color: white;
   font-style: italic;
   text-align: center;
   background-color: rgb(114, 22, 22);
   position: absolute;
-  top: 400px;
+  top: 600px;
   left: 55%;
 
   cursor: pointer;
@@ -82,14 +87,14 @@ body {
   box-shadow: 0px 0px 13px 3px rgb(114, 22, 22);
 }
 
-.description {
+.lunch-description {
   color: white;
   text-align: start;
   width: 100%;
   font-size: 17px;
 }
 
-.description a {
+.lunch-description a {
   height: 60px;
   width: 140px;
   color: white;
@@ -104,27 +109,28 @@ body {
   }
 }
 
-.description p {
+.lunch-description p {
   text-align: justify;
 }
 
-.description h1 {
+.lunch-description h1 {
   text-align: center;
 }
 
-.sundays {
+.red-background {
   width: 100%;
   height: auto;
   background-color: rgb(114, 22, 22);
   margin-top: 40px;
   color: white;
   font-size: 17px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .champ-img {
   width: 100%;
-  height: auto;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -155,7 +161,7 @@ body {
 }
 
 .carousel {
-  height: 545px;
+  height: auto;
   color: white;
   text-align: justify;
   display: flex;
@@ -175,10 +181,44 @@ body {
   font-style: italic;
 }
 
-
 #carouselExampleFade {
   height: auto;
+  width: 978px;
+  margin: auto;
 }
+
 .carousel-item .img{
   object-fit: cover;
+}
+
+.restaurant-details {
+  height: auto;
+  width: 100%;
+  background-color: rgb(97, 18, 18);
+  color: white ;
+  text-align: justify;
+}
+
+.restaurant-details h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.restaurant-details p {
+  margin-bottom: 6px;
+}
+
+.dress-code p {
+ margin-top: 4px;
+ text-align: justify;
+}
+
+.contact-details p {
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.test {
+  margin-top: 2px;
 }
