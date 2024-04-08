@@ -1,16 +1,18 @@
-  <div class="navbar d-flex align-items-evenly px-4" data-controller="scroll" data-action="scroll->scroll#scroll">
+  <div class="navbar d-flex align-items-around px-3" data-controller="scroll" data-action="scroll->scroll#scroll">
 
 
-        <div class="mb-3">
-          <%= image_tag("logo.jpeg", width: "35px") %>
+        <div class="logo">
+          <%= link_to about_path do %>
+            <%= image_tag("logo.jpeg", width: "35px", style: "border-radius: 50%") %>
+          <% end %>
         </div>
 
 
-        <div class="mb-5">
+        <div class="nav-cta">
           <%# <%= link_to "Home" %>
-          <%= link_to "Menu" %>
-          <%= link_to "Events" %>
-          <%= link_to "The Dragon Room" %>
+          <%= link_to "Menu", menu_path %>
+          <%= link_to "Events", events_path%>
+          <%= link_to "The Dragon Room", thedragonroom_path%>
         </div>
 
 

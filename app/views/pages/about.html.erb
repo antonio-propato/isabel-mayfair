@@ -1,7 +1,6 @@
 <div class="d-flex flex-column">
 
   <div class="banner">
-    <%= render 'shared/navbar' %>
       <div class="video-container mb-3">
         <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fisabelmayfairrestaurant%2Fvideos%2F769131824475414%2F&show_text=false&width=560&t=0"
                 style="border:none;overflow:hidden"
@@ -14,14 +13,8 @@
                 muted>
         </iframe>
       </div>
-
-        <%# <h1>Isabel Mayfair</h1> %>
-<%#
-        <div class="cta d-flex justify-content-center">
-          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded" %>
-          <%# <%= mail_to "events@isabelw1.london", "Events", class: "events p-3 rounded" %>
-        </div>
   </div>
+
 
 
 
@@ -182,8 +175,18 @@
       </div>
     </div>
 
-</div>
+  </div>
 
-</div>
-</div>
+  <div class="footer d-flex justify-content-center p-3 m-3">
+
+  <div class="social-icons">
+    <%= link_to "https://www.instagram.com/isabelmayfair/?hl=en" do %>
+      <i class="fa-brands fa-instagram p-2 fa-2x text-light"></i>
+    <% end %>
+
+    <%= link_to"https://www.facebook.com/isabelmayfairrestaurant/" do %>
+    <i class="fa-brands fa-facebook-f p-2 fa-2x text-light"></i>
+    <% end %>
+  </div>
+
 </div>
