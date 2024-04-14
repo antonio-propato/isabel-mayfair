@@ -1,0 +1,68 @@
+.menu-head {
+  width: 800px;
+  text-align: center;
+  margin-top: 38px;
+  position: relative;
+  bottom: 30px;
+
+  p {
+    font-size: 25px;
+    color:white;
+    font-style: italic;
+
+  }
+}
+
+
+.menu-cards {
+  color: white;
+  width: 350px;
+  height: 220px;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
+  border: 1px solid rgb(170, 165, 165);
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 2px argb(114, 22, 22, 0.593);
+  background: linear-gradient(to right, rgb(114, 22, 22), rgb(8, 8, 8));
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center;
+  position: relative;
+
+}
+
+.menu-box {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.res {
+  height: auto;
+  width: 140px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  background-color: rgb(114, 22, 22);
+
+
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(118, 57, 57);
+    color: white;
+    transition: 0.5s;
+  }
+}
+
+.isabel-img {
+  position: absolute;
+  z-index: -1;
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

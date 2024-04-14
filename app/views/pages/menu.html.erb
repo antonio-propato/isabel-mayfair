@@ -1,1 +1,50 @@
-<h1>Menu</h1>
+<div class="d-flex flex-column">
+
+  <div class="row">
+    <%= image_tag("Isabel.jpeg", style: "opacity: 0.5;", class: "isabel-img") %>
+  </div>
+
+  <div class="container d-flex justify-content-center p-3">
+    <div class="menu-head">
+      <p>Our menus consists of dishes created with the freshest, seasonal ingredients and they may  regularly change to reflect this. </p>
+    </div>
+  </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="menu-box d-flex justify-content-evenly">
+              <p class="menu-cards">A la carte</p>
+              <p class="menu-cards">Lunch</p>
+              <p class="menu-cards">Desserts</p>
+
+              <p class="menu-cards">Sundays</p>
+              <p class="menu-cards">Champagne Brunch</p>
+
+              <p class="menu-cards">Cocktails & Spirits</p>
+              <p class="menu-cards">Wine</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container d-flex justify-content-center mb-3">
+          <%= link_to "Reservations", "https://www.sevenrooms.com/reservations/isabelmayfair", class: "res p-3 rounded align-self-end my-5" %>
+      </div>
+
+
+       <div class="footer d-flex justify-content-center p-3 m-3">
+
+        <div class="social-icons">
+            <%= link_to "https://www.instagram.com/isabelmayfair/?hl=en" do %>
+              <i class="fa-brands fa-instagram p-2 fa-2x text-light"></i>
+            <% end %>
+
+            <%= link_to"https://www.facebook.com/isabelmayfairrestaurant/" do %>
+              <i class="fa-brands fa-facebook-f p-2 fa-2x text-light"></i>
+            <% end %>
+        </div>
+
+      </div>
+</div>
