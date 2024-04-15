@@ -1,8 +1,6 @@
+
 <div class="d-flex flex-column">
 
-  <div class="row">
-    <%= image_tag("Isabel.jpeg", style: "opacity: 0.5;", class: "isabel-img") %>
-  </div>
 
   <div class="container d-flex justify-content-center p-3">
     <div class="menu-head">
@@ -15,15 +13,15 @@
       <div class="row">
         <div class="col-12">
             <div class="menu-box d-flex justify-content-evenly">
-              <p class="menu-cards">A la carte</p>
-              <p class="menu-cards">Lunch</p>
-              <p class="menu-cards">Desserts</p>
+              <p class="menu-cards"> <%= link_to "A la carte", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/6613a6e891590d78a219d67a/1712563945048/ISABEL+ALC+MENU+240404.pdf", class: "text-light" %></p>
+              <p class="menu-cards"><%= link_to "Lunch", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/66139d55c1cf582774cf5380/1712561493826/ISABEL+LUNCH+MENU+290226.pdf", class: "text-light" %></p>
+              <p class="menu-cards"><%= link_to "Desserts", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/66139d2f469dec2b2be068bd/1712561455351/ISABEL+DESSERT+MENU+240404.pdf", class: "text-light" %></p>
 
-              <p class="menu-cards">Sundays</p>
-              <p class="menu-cards">Champagne Brunch</p>
+              <p class="menu-cards"><%= link_to "Sundays", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/6613a701ea5c6d0117ad51c6/1712563970014/ISABEL+SUNDAY+MENU+240407.pdf", class: "text-light" %></p>
+              <p class="menu-cards"><%= link_to "Champagne Brunch", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/6613a7129a4c4f2306f7943a/1712563987101/ISABEL+SUNDAY+BRUNCH+MENU+240407.pdf", class: "text-light" %></p>
 
-              <p class="menu-cards">Cocktails & Spirits</p>
-              <p class="menu-cards">Wine</p>
+              <p class="menu-cards"><%= link_to "Cocktails & Spirits", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/65b749de3ccbfa6187802f53/1706510860856/ISABEL+BAR+MENU+BOOK+231130+WEBSITE.pdf", class: "text-light" %></p>
+              <p class="menu-cards"><%= link_to "Wine", "https://static1.squarespace.com/static/5ea97ff02c9f387e365f0aa2/t/64b6eb5a5702374babebae75/1689709402319/ISABEL+WINE+LIST+14.07.2023+July+.pdf", class: "text-light" %></p>
             </div>
         </div>
       </div>
