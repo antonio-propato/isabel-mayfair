@@ -1,6 +1,7 @@
 .events {
   color: white;
   position: relative;
+  top: 150px;
   font-style: italic;
   z-index: 1;
   h1 {
@@ -14,7 +15,9 @@
 .pdr-img {
   opacity: 0.6;
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
 
 }
 
