@@ -6,6 +6,7 @@
   z-index: 1;
   h1 {
     font-size: 4vw;
+    font-weight: bold;
   }
   p {
     font-size: 2vw;
@@ -14,7 +15,7 @@
 
 .pdr-img {
   opacity: 0.6;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   position: absolute;
   object-fit: cover;
@@ -23,4 +24,30 @@
 
 .line {
   color: white;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1174px) {
+  .events h1 {
+    font-size: 40px; /* Set a fixed font size for medium screens */
+  }
+  .events p {
+    font-size: 20px; /* Set a fixed font size for medium screens */
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .events h1 {
+    font-size: 40px; /* Set a fixed font size for smaller screens */
+  }
+  .events p {
+      font-size: 20px; /* Set a fixed font size for smaller screens */
+      text-align: center;
+      }
+}
+
+.footer {
+  position: relative;
+  top: 180px;
 }

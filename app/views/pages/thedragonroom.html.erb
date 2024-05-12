@@ -1,1 +1,40 @@
-<h1>The Dragon Room 🐉</h1>
+<div class="row">
+  <div class="col lg-12 sm-6">
+
+    <h1 class="dragonroom">Dragon Room</h1>
+    <p class="dragon-description">Hidden away, The Dragon Room is part private club, dining room and lounge bar. <br>
+      Discreet and intimate, The Dragon Room hosts weekly DJs and hedonistic late nights.</p>
+
+    <p id="guestlist">To add your name to the guest list please complete the following form.</p>
+    <%= image_tag('dragon_room.jpeg', class: "overlay") %>
+
+    <div class="container form d-flex justify-content-center align-items-center">
+      <form class="d-flex flex-column w-50 justify-content-center p-3">
+        <!-- form fields go here -->
+        <label for="name" class="text-light p-1">Name:</label>
+        <input type="text" id="name" name="name" class="mb-1 rounded p-1" placeholder="Jack" required>
+
+        <label for="last_name" class="text-light p-1">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" class="mb-1 rounded p-1" placeholder="Lovelace"  required>
+
+        <label for="email" class="text-light p-1">Email:</label>
+        <input type="email" id="email" name="email" class="mb-1 rounded p-1" placeholder="jack@lovelace.com" required>
+
+        <label for="guests" class="text-light p-1">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" class="mb-1 rounded p-1" placeholder="maximum 3 guests per person" required>
+
+        <label for="date" class="text-light p-1">Date:</label>
+        <input type="date" id="date" name="date" class="mb-12 rounded p-1" required>
+
+        <div style="text-align: center;">
+            <input type="button" value="Submit" class="btn btn-light mt-5 w-75">
+        </div>
+      </form>
+
+    </div>
+
+</div>
+</div>
+
+
+   <%# <%= render "shared/footer" %>

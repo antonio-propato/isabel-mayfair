@@ -22,7 +22,7 @@
   font-weight: 100;
   font-style: italic;
   border: 1px solid white;
-  margin: 20px;
+  // margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,5 +54,38 @@
     background-color: rgb(118, 57, 57);
     color: white;
     transition: 0.5s;
+  }
+}
+
+.background-menu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .menu-head {
+    font-size: 50px; /* Set a fixed font size for medium screens */
+  }
+  .menu-cards {
+    width: 230px;
+    height: 180px;
+    text-align: center;
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-head {
+    font-size: 50px; /* Set a fixed font size for medium screens */
+  }
+  .menu-cards {
+    width: 200px;
+    height: 140px;
+    text-align: center;
+    margin: 10px;
   }
 }

@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-
   def about
   end
 
@@ -10,5 +9,8 @@ class PagesController < ApplicationController
   end
 
   def dragonroom
+    @dragon = Dragon.New
   end
+
+
 end
