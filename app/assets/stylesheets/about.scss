@@ -221,7 +221,10 @@ body {
 }
 
 .footer {
-  height: 100px;
+  height: 10px;
   width: auto;
   color: white;
+  margin: 0;
+  padding-top: 0;
+  position: relative;
 }

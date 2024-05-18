@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 768px) {
   .events h1 {
-    font-size: 40px; /* Set a fixed font size for smaller screens */
+    font-size: 30px; /* Set a fixed font size for smaller screens */
   }
   .events p {
       font-size: 20px; /* Set a fixed font size for smaller screens */
@@ -48,6 +48,5 @@
 }
 
 .footer {
-  position: relative;
-  top: 180px;
+  top: 130px;
 }

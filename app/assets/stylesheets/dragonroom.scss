@@ -85,4 +85,10 @@ form {
   #guestlist {
     font-size: 18px; /* Set a fixed font size for smaller screens */
   }
+  form {
+    margin-top: 50px;
+    width: 100px !important;
+    margin: 0 auto;
+    z-index: 1 !important; /* Override z-index to 1 */
+  }
 }
